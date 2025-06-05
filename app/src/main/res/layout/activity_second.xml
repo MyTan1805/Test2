@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg02"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/imageViewGoldenFeather"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/golden_feather_desc"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!-- Adjust bias to position number on feather -->
+
+
+    <TextView
+        android:id="@+id/textViewLuckyNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="@string/your_lucky_number_is"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLuckyNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_purple"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewGoldenFeather"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewGoldenFeather"
+        app:layout_constraintStart_toStartOf="@+id/imageViewGoldenFeather"
+        app:layout_constraintTop_toTopOf="@+id/imageViewGoldenFeather"
+        app:layout_constraintVertical_bias="0.366"
+        tools:text="283" />
+
+    <Button
+        android:id="@+id/buttonShareNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/share_lucky_number_button"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
